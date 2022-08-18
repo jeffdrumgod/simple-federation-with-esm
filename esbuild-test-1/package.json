@@ -18,9 +18,11 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@hyrious/esbuild-plugin-style": "link:../../esbuild-plugin-style",
     "@types/react": "^18.0.17",
     "esbuild": "^0.15.5",
     "esbuild-plugin-less": "^1.1.9",
+    "esbuild-plugin-manifest": "^0.5.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   }

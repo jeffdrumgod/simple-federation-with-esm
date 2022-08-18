@@ -1,0 +1,9 @@
+{
+  "src/app.tsx": "federated/app.js",
+  "src/app.css": "federated/app.css",
+  "src/button/index.tsx": "federated/button.js",
+  "src/button/index.css": "federated/button.css",
+  "src/input/index.tsx": "federated/input.js",
+  "src/container/index.tsx": "federated/container.js",
+  "src/container/index.css": "federated/container.css"
+}
