@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, esbuild!</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "App": "/app.js",
+                "Button": "/button.js",
+                "Container": "/container.js"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script type="module">
+        import App from "App";
+        import Container from "Container";
+        App({
+            container: Container
+        });
+    </script>
+    <div id="root"></div>
+</body>
+
+</html>
