@@ -5,16 +5,16 @@ specifiers:
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.1
+  lib: link:../lib
   react: ^18.2.0
   react-dom: ^18.2.0
   typescript: ^4.6.4
   vite: ^3.0.7
-  vite-test-lib-1: link:../vite-test-lib-1
 
 dependencies:
+  lib: link:../lib
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  vite-test-lib-1: link:../vite-test-lib-1
 
 devDependencies:
   '@types/node': 18.7.6
@@ -397,7 +397,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001378
-      electron-to-chromium: 1.4.224
+      electron-to-chromium: 1.4.225
       node-releases: 2.0.6
       update-browserslist-db: 1.0.5_browserslist@4.21.3
     dev: true
@@ -447,8 +447,8 @@ packages:
       ms: 2.1.2
     dev: true
 
-  /electron-to-chromium/1.4.224:
-    resolution: {integrity: sha512-dOujC5Yzj0nOVE23iD5HKqrRSDj2SD7RazpZS/b/WX85MtO6/LzKDF4TlYZTBteB+7fvSg5JpWh0sN7fImNF8w==}
+  /electron-to-chromium/1.4.225:
+    resolution: {integrity: sha512-ICHvGaCIQR3P88uK8aRtx8gmejbVJyC6bB4LEC3anzBrIzdzC7aiZHY4iFfXhN4st6I7lMO0x4sgBHf/7kBvRw==}
     dev: true
 
   /esbuild-android-64/0.14.54:

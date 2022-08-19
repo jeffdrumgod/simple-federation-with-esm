@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React + TS</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "lib/dist/": "http://0.0.0.0:8081/dist/",
+
+        "react": "https://esm.sh/v88/react@18.2.0/es2022/react.js",
+        "react-dom": "https://esm.sh/v88/react-dom@18.2.0/es2022/react-dom.js",
+        "react-dom/client": "https://esm.sh/v88/react-dom@18.2.0/es2022/client.js",
+        "react-is": "https://esm.sh/v88/react-is@18.2.0/es2022/react-is.js",
+        "react-jsx-runtime": "https://esm.sh/v88/react@18.2.0/es2022/jsx-runtime.js"
+      }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

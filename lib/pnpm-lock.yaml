@@ -9,6 +9,7 @@ specifiers:
   esbuild-visualizer: ^0.3.1
   glob: ^8.0.3
   madge: ^5.0.1
+  minimist: ^1.2.6
   react: ^18.2.0
   react-dom: ^18.2.0
   rimraf: ^3.0.2
@@ -27,6 +28,7 @@ devDependencies:
   esbuild-visualizer: 0.3.1
   glob: 8.0.3
   madge: 5.0.1
+  minimist: 1.2.6
   rimraf: 3.0.2
   typescript: 4.7.4
 

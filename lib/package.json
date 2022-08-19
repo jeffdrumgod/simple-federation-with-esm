@@ -2,11 +2,11 @@
   "name": "lib",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "ts-types": "tsc --emitDeclarationOnly --outDir dist",
-    "dev": "node ./esbuild.dev.js && pnpm ts-types",
+    "dev": "rimraf dist && node ./esbuild.js --mode=development",
     "build": "rimraf dist && node ./esbuild.js --mode=production && pnpm ts-types && pnpm esbuild-visualizer && pnpm generate-dependency-tree",
     "esbuild-visualizer": "esbuild-visualizer --filename ./reports/stats.html --metadata ./reports/meta.json",
     "generate-dependency-tree": "node madge.js"
@@ -27,6 +27,7 @@
     "esbuild-visualizer": "^0.3.1",
     "glob": "^8.0.3",
     "madge": "^5.0.1",
+    "minimist": "^1.2.6",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   }

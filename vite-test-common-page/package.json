@@ -1,5 +1,5 @@
 {
-  "name": "vite-test-1",
+  "name": "vite-test-common-page",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lib": "link:../lib",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vite-test-lib-1": "link:../vite-test-lib-1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.6",
