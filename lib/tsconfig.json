@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-      "jsx": "react",
+      "baseUrl": ".",
+      "jsx": "react-jsx",
       "declaration": true,
       "target": "esnext",
       "lib": ["esnext", "dom"],
@@ -8,6 +9,10 @@
       "noImplicitAny": false,
       "esModuleInterop": true,
       "moduleResolution": "node",
-      "outDir": "lib"
-    }
+      "outDir": "lib",
+      "types": ["node", "jest", "@testing-library/jest-dom"]
+    },
+    "exclude": [
+        // "./src/**/*.test.tsx",
+    ]
 }

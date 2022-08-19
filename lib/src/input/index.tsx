@@ -1,9 +1,12 @@
 import React from "react";
-import Input from "antd/es/input";
+import Input, { InputProps } from "antd/es/input";
 // import "./style.less";
 
-const Inp = () => {
-  return <Input />;
+const Inp = (props: InputProps) => {
+  const x = (x) => {
+    return x + 1;
+  };
+  return <Input {...props} onFocus={x} />;
 };
 
 export default Inp;

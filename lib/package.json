@@ -5,11 +5,14 @@
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "ts-types": "tsc --emitDeclarationOnly --outDir dist",
+    "ts-types": "tsc --project tsconfig.build.json",
     "dev": "rimraf dist && node ./esbuild.js --mode=development",
     "build": "rimraf dist && node ./esbuild.js --mode=production && pnpm ts-types && pnpm esbuild-visualizer && pnpm generate-dependency-tree",
     "esbuild-visualizer": "esbuild-visualizer --filename ./reports/stats.html --metadata ./reports/meta.json",
-    "generate-dependency-tree": "node madge.js"
+    "generate-dependency-tree": "node madge.js",
+    "test": "vitest --watch=false",
+    "test:watch": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
@@ -20,15 +23,28 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@vitejs/plugin-react": "^2.0.1",
+    "@vitest/coverage-c8": "^0.22.1",
+    "@vitest/ui": "^0.22.1",
     "esbuild": "^0.15.5",
     "esbuild-plugin-less": "^1.1.9",
     "esbuild-plugin-manifest": "^0.5.0",
     "esbuild-visualizer": "^0.3.1",
     "glob": "^8.0.3",
+    "jsdom": "^20.0.0",
     "madge": "^5.0.1",
     "minimist": "^1.2.6",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vite": "^3.0.9",
+    "vitest": "^0.22.1"
   }
 }
