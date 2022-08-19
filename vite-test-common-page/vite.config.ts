@@ -11,10 +11,10 @@ export default defineConfig({
       //   find: /^lib\/dist\/(.*)$/,
       //   replacement: "lib/dist/$1.mjs",
       // },
-      {
-        find: /^lib\/dist\/(.*)$/,
-        replacement: "http://127.0.0.1:8080/$1.js",
-      },
+      // {
+      //   find: /^lib\/dist\/(.*)$/,
+      //   replacement: "http://127.0.0.1:8080/$1.js",
+      // },
     ],
   },
   build: {
