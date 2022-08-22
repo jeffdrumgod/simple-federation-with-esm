@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./styles.module.less";
 
 export default function index() {
